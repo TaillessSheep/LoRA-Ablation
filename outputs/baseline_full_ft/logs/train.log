@@ -1,0 +1,15 @@
+===== Offline Training Mode =====
+Using local model and local dataset only.
+Loading model from local path: /home/wjcui/5103/project/robeata
+Full Fine-tuning all parameters.
+Total params: 124647170
+Trainable params: 124647170 (100.0000% of total)
+CUDA detected: Enabling FP16 mixed precision training
+=== Start Training ===
+=== Training Finished ===
+Total training time: 311.30 seconds
+GPU memory before training: 476.73 MB
+GPU memory after training: 1494.98 MB
+GPU peak memory during training: 2480.54 MB
+Final Eval: {'eval_loss': 0.26056262850761414, 'eval_accuracy': 0.9369266055045872, 'eval_runtime': 0.3453, 'eval_samples_per_second': 2525.048, 'eval_steps_per_second': 159.263, 'epoch': 3.0}
+Saved best model to: ./outputs/baseline_full_ft/best_model

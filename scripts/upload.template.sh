@@ -1,0 +1,2 @@
+rsync -avz --exclude='.git/' --exclude='.git/**' --include='.*' . [user]@superpod.ust.hk:/home/[user]/[path]/LoRA-Ablation --progress
+# e.g. rsync -avz --exclude='.git/' --exclude='.git/**' --include='.*' . wjcui@superpod.ust.hk:/home/wjcui/5103/project/LoRA-Ablation --progress

@@ -1,0 +1,15 @@
+{
+    "use_lora": true,
+    "improved": false,
+    "rank": 16,
+    "alpha": 16,
+    "dropout": 0.05,
+    "batch": 16,
+    "lr": 2e-05,
+    "epochs": 3,
+    "output_dir": "./outputs/lora_rank_r16",
+    "data_dir": "./SST-2",
+    "total_params": 125829124,
+    "trainable_params": 1181954,
+    "trainable_ratio": 0.009393326142841144
+}

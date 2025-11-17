@@ -1,0 +1,15 @@
+===== Offline Training Mode =====
+Using local model and local dataset only.
+Loading model from local path: /home/wjcui/5103/project/robeata
+Using LoRA (rank=8, alpha=16, dropout=0.1, improved=False)
+Total params: 125534212
+Trainable params: 887042 (0.7066% of total)
+CUDA detected: Enabling FP16 mixed precision training
+=== Start Training ===
+=== Training Finished ===
+Total training time: 270.82 seconds
+GPU memory before training: 480.12 MB
+GPU memory after training: 551.89 MB
+GPU peak memory during training: 1113.13 MB
+Final Eval: {'eval_loss': 0.21618078649044037, 'eval_accuracy': 0.9277522935779816, 'eval_runtime': 0.4186, 'eval_samples_per_second': 2083.248, 'eval_steps_per_second': 131.398, 'epoch': 3.0}
+Saved best model to: ./outputs/lora_dropout_only/best_model

@@ -1,0 +1,114 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Model files and checkpoints
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.h5
+*.pb
+*.onnx
+*.tflite
+*.pkl
+*.pickle
+
+# Model directories
+robeata/
+models/
+checkpoints/
+checkpoint-*/
+
+# Training outputs - ignore model files and checkpoints, but keep logs, hyperparams, and results
+# First, ignore checkpoint directories and best_model in outputs
+outputs/*/checkpoint-*/
+outputs/*/best_model/
+# Ignore model files in outputs
+outputs/**/*.bin
+outputs/**/*.pt
+outputs/**/*.pth
+outputs/**/rng_state.pth
+outputs/**/training_args.bin
+outputs/**/trainer_state.json
+
+# Other logs (outside outputs directory)
+logs/
+*.log
+# But allow logs directory and log files in outputs (exceptions must come after general patterns)
+!outputs/*/logs/
+!outputs/*/logs/*.log
+wandb/
+tensorboard/
+runs/
+
+# Data directories (uncomment if you don't want to track data)
+# SST-2/
+
+# Hugging Face cache
+.cache/
+.huggingface/
+
+# Weights & Biases
+.wandb/
+
+# MLflow
+mlruns/
+
+# Large files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Training state files
+rng_state.pth
+training_args.bin
+trainer_state.json
+
+# Ignore everything in scripts/ except collect_results and *.template.*
+scripts/*
+!scripts/collect_results.py
+!scripts/run_all_ablation.sh
+!scripts/*.template.*
+
+# Allow download_result.template.sh but ignore download_result.sh, etc.
+# (handled by *.template.* above)
+
+

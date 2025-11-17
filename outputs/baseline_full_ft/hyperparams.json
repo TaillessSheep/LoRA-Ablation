@@ -1,0 +1,15 @@
+{
+    "use_lora": false,
+    "improved": false,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.0,
+    "batch": 16,
+    "lr": 2e-05,
+    "epochs": 3,
+    "output_dir": "./outputs/baseline_full_ft",
+    "data_dir": "./SST-2",
+    "total_params": 124647170,
+    "trainable_params": 124647170,
+    "trainable_ratio": 1.0
+}

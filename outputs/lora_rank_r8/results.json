@@ -1,0 +1,15 @@
+{
+    "eval_loss": 0.20912542939186096,
+    "eval_accuracy": 0.9277522935779816,
+    "eval_runtime": 0.441,
+    "eval_samples_per_second": 1977.545,
+    "eval_steps_per_second": 124.73,
+    "epoch": 3.0,
+    "total_params": 125534212,
+    "trainable_params": 887042,
+    "trainable_ratio": 0.0070661374765310985,
+    "training_time_sec": 278.7215566635132,
+    "gpu_mem_before_mb": 480.1181640625,
+    "gpu_mem_after_mb": 551.8876953125,
+    "gpu_mem_peak_mb": 1113.1279296875
+}

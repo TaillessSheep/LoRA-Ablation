@@ -1,0 +1,10 @@
+transformers==4.40.2
+datasets==2.19.1
+evaluate==0.4.1
+accelerate==0.27.2
+peft==0.10.0
+torch>=2.0
+sentencepiece
+scikit-learn
+numpy
+tqdm
