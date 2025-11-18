@@ -54,19 +54,21 @@ Thumbs.db
 robeata/
 models/
 checkpoints/
-checkpoint-*/
+checkpoint-*/*
+!checkpoint-*/trainer_state.json
 
 # Training outputs - ignore model files and checkpoints, but keep logs, hyperparams, and results
-# First, ignore checkpoint directories and best_model in outputs
-outputs/*/checkpoint-*/
+# Ignore best_model directories in outputs
 outputs/*/best_model/
-# Ignore model files in outputs
+# Ignore model files in outputs (including checkpoint directories)
 outputs/**/*.bin
 outputs/**/*.pt
 outputs/**/*.pth
 outputs/**/rng_state.pth
 outputs/**/training_args.bin
-outputs/**/trainer_state.json
+# Ignore other files in checkpoint directories, but allow trainer_state.json
+outputs/*/checkpoint-*/*
+!outputs/*/checkpoint-*/trainer_state.json
 
 # Other logs (outside outputs directory)
 logs/
@@ -74,6 +76,8 @@ logs/
 # But allow logs directory and log files in outputs (exceptions must come after general patterns)
 !outputs/*/logs/
 !outputs/*/logs/*.log
+!outputs/**/trainer_state.json
+!trainer_state.json
 wandb/
 tensorboard/
 runs/
@@ -100,7 +104,6 @@ mlruns/
 # Training state files
 rng_state.pth
 training_args.bin
-trainer_state.json
 
 # Ignore everything in scripts/ except collect_results and *.template.*
 scripts/*
